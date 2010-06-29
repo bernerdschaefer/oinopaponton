@@ -1,3 +1,4 @@
 .swp
 public/*
+!public/favicon.ico
 !public/stylesheets/
