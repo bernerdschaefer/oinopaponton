@@ -4,6 +4,7 @@
     %meta{ :content => "text/html; charset=utf-8", "http-equiv" => "content-type" }
     %title
       oinopa ponton
+      = ":: #{@title}" if @title
     %link{ :href => "/stylesheets/screen.css", :rel => "stylesheet", :type => "text/css", :media => "screen", :charset => "utf-8" }
   %body
     %header

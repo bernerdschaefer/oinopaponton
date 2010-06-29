@@ -24,14 +24,14 @@ Dir["entries/*/*/*/*.html.haml", "entries/index.html.haml", "entries/feed.rss.ha
   FileUtils.mkdir_p(public_path.dirname)
 
   File.open(public_path, "w") do |file|
+    context = BlogContext.new
     content = ""
 
     Dir.chdir(path.dirname) do
-      context = BlogContext.new
       content = Haml::Engine.new(File.read(path.basename)).render(context)
     end
 
     puts "Writing: #{public_path.relative_path_from(Pathname("public"))}"
-    file.write public_path.extname == ".html" ? layout.render(nil, :content => content) : content
+    file.write public_path.extname == ".html" ? layout.render(context, :content => content) : content
   end
 end
