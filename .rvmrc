@@ -1,1 +1,2 @@
 rvm use 1.9.1
+alias watch="watchr .watch"

@@ -1,0 +1,6 @@
+fork do
+  Dir.chdir("public") do
+    system("python -m SimpleHTTPServer")
+  end
+end
+watch('entries/.*') { system("./blog") }
