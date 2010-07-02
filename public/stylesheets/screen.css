@@ -6,6 +6,7 @@ header { background-color: #fff; display: block; width: 500px; margin-bottom: 20
 header h1 { background-color: #0E0826; margin: 0; font-weight: normal; line-height: 2em; text-align: center; font-style: italic; }
 header h1 a { color: #eee; display: block; text-decoration: none }
 header h1 a:visited { color: #eee; }
+header p { color: #777; }
 footer { display: block; color: #99a; line-height: 4em; font-size: 10px; width: 100%; position: relative; left: -80px; text-indent: -80px; padding-left: 80px; text-align: center; font-family: "Lucida Grande", Helvetica, sans-serif; font-weight: bold; margin-top: 20px }
 pre, tt, code, kbd { font-family: Monaco, Consolas, 'Lucida Console', monospace; font-size: 12px }
 footer p { margin: 0 }
@@ -13,6 +14,8 @@ article#blog { background-color: #fff; display: block; line-height: 1.8em }
 article#blog h1 a { color: #111; text-decoration: none }
 article#blog section { display: block; width: 500px; }
 article#blog section h2 { font-size: 1.4em }
+sup { margin: 0 0 0 2px; }
+section.footnotes { font-size: 0.8em }
 time { background-color: #b44; color: #fff; display: block; font: 8px "Lucida Grande", Helvetica, sans-serif; width: 30px; padding: 4px; -webkit-border-radius: 4px; text-align: center; position: absolute; left: 25px; }
 time .date { font-size: 16px; display: block }
 time .month { text-transform: uppercase; font-weight: bold }
